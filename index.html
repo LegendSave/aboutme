@@ -30,7 +30,7 @@
 				<img src="Soccer-Ball.jpg" width="170px" height="170px"><img src="code.jpg" width="170px" height="170px" style="position: relative; top: 30px;">
 				<h4 style="position: relative; top: 15px;">I love to play soccer, and program</h4>
 		</div>
-		<div style="float: right; position: relative; top: 10cm;">
+		<div style="float: right; position: relative; top: 10cm;" id="move">
 			<h2> Favorite candy</h2>
 			<img src="ree.jpg" height="170px" width="180px">
 			<h4> My favorite candy is Reese's</h4>
@@ -54,7 +54,10 @@
 		</div>
 		
 		<script>
-			console.log(window.innerWidth);
+			var info = document.getElementById("move");
+			if (window.innerWidth >= 1200){
+			info.style.right = "30px";
+			}
 		</script>
 	</body>
 </html>

@@ -12,18 +12,6 @@
 			h3{font-size:40px;}
 			h4{font-size: 35px;}
 			h5{color: grey;}
-			        #scrollDemo {
-            height: 200px;
-            width: 200px;
-            overflow: auto;
-            background-color: #f0db4f
-        }
-
-        #scrollDemo p {
-            /* show the scrollbar */
-            height: 300px;
-            width: 300px;
-        }
 		</style>
 	</head>
 	<body>
@@ -87,14 +75,9 @@
 				l3.style.top = "44.5cm";
 			}
 			console.log(window.innerWidth);
-			        const scrollDemo = document.querySelector("#scrollDemo");
-        			const output = document.querySelector(".output");
-
-        			scrollDemo.addEventListener("scroll", event => {
-            			output.innerHTML = `scrollTop: ${scrollDemo.scrollTop} <br>
-                                scrollLeft: ${scrollDemo.scrollLeft} `;
-					console.log(output.innerHTML);
-        }, { passive: true });
+			document.addEventListener("scroll", e =>{
+				console.log(event.value);
+			}
 		</script>
 	</body>
 </html>

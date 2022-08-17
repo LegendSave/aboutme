@@ -76,8 +76,9 @@
 			}
 			console.log(window.innerWidth);
 			document.addEventListener("scroll", e =>{
-				if (scrollY >= 55){
+				if (scrollY == 55){
 					info.style.color = "blue";
+					console.log(scrollY);
 				}
 			});
 		</script>

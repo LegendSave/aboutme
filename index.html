@@ -76,7 +76,9 @@
 			}
 			console.log(window.innerWidth);
 			document.addEventListener("scroll", e =>{
-				console.log(event.value);
+				if (event.value >= 55){
+					document.style.backgroundColor = "blue";
+				}
 			});
 		</script>
 	</body>

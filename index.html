@@ -21,12 +21,12 @@
 			<h3>Timothy Wallis</h3>
 		</div>
 		</center>
-			<div style="float: right;">
+			<div style="float: right;" id="right">
  				<img src="house.jpg" width="250px" height="135px">
 				<h4>I am from Columbus, Ohio.</h4>
 				<h4>I live with my Mom, Dad, and Sisters.</h4>
 			</div>
-			<div style="float: left; position: relative; top: 10cm;">
+			<div style="float: left; position: relative; top: 10cm;" id="left">
 				<h2>Favorite Things...</h2>
 				<img src="Soccer-Ball.jpg" width="170px" height="170px"><img src="code.jpg" width="170px" height="170px" style="position: relative; top: 30px;">
 				<h4 style="position: relative; top: 15px;">I love to play soccer, and program</h4>
@@ -36,19 +36,19 @@
 			<img src="ree.jpg" height="170px" width="180px">
 			<h4> My favorite candy is Reese's</h4>
 		</div>
-		<div style="float: left; position: relative; top: 20cm;">
+		<div style="float: left; position: relative; top: 20cm;" id="left">
 			<h2>What I am excited for this class</h2>
 			<img src="3d.jpg" height="170px" width="195px">
 			<h4>What I am excited for in this class is </h4>
 			<h4>learning how to use 2d and 3d modeling software.</h4>
 		</div>
-		<div style="float: right; position: relative; top: 20cm;">
+		<div style="float: right; position: relative; top: 20cm;" id="right">
 			<h2>Plans after High School...</h2>
 			<img src="exp.jpg" width="300px" height="170px">
 			<h4>I plan to go to a university,</h4>
 			<h4>and get a job in engineering/computer programming</h4>
 		</div>
-		<div style="float: left; position: relative; top: 20cm;">
+		<div style="float: left; position: relative; top: 20cm;" id="left">
 			<h2>Goals for this Class/School year</h2>
 			<img src="a.jpg" width="170px" height="170px">
 			<h4>My goals are to get all A's for every class</h4>
@@ -56,9 +56,13 @@
 		
 		<script>
 			var info = document.getElementById("move");
+			var r = document.getElementById("right");
+			var l = document.getElementById("left");
 			if (window.innerWidth >= 1200){
-			info.style.top = "20cm";
-			info.style.left = "10cm";
+				info.style.top = "20cm";
+				info.style.left = "10cm";
+				r.style.right = "10cm";
+				l.style.left = "10cm";
 			}
 		</script>
 		<h5> This is not used for commercial use. All copyrights are reserved to the original owners.</h5>

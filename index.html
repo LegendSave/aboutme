@@ -106,9 +106,11 @@
 			l3.style.top = "40cm";
 		}
 		console.log(window.innerWidth);
+		function animate (){
+			requestAnimationFrame(animate)
 		if (scrollY >= 30){
 			r1.style.backgroundColor = "red";
-		}
+		}}
 		function debug() {
 			info.style.top = "16.5cm";
 			info.style.left = "0cm";

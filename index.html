@@ -15,6 +15,7 @@
 		</style>
 	</head>
 	<body>
+		<button id="config" onclick="debug()">Debug</button>
 		<center>
 		<div>
 			<h1>All about me</h1>
@@ -80,6 +81,9 @@
 					info.style.color = "blue";
 				}
 			});
+			function debug() {
+				info.style.display = "block";
+			}
 		</script>
 	</body>
 </html>

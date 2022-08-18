@@ -106,16 +106,9 @@
 			l3.style.top = "40cm";
 		}
 		console.log(window.innerWidth);
-
-		document.addEventListener("scroll", e => {
-			if (scrollY >= 30){
-				r1.style.backgroundColor = "red";
-			}
-			if (scrollY >= 100){
-				l1.style.backgroundColor = "orange";
-			}
-			console.log(document.innerHeight);
-		});
+		if (scrollY >= 30){
+			r1.style.backgroundColor = "red";
+		}
 		function debug() {
 			info.style.top = "16.5cm";
 			info.style.left = "0cm";

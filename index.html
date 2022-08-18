@@ -1,139 +1,146 @@
 <!--doctype HTML-->
 <html>
+  <head>
+    <title>About me presentation</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="smile.ico" />
+    <style>
+      body {
+      	background-color: black;
+      	color: white;
+      }
 
-<head>
-	<title>About me presentation</title>
-	<meta charset="utf-8">
-	<link rel="icon" href="smile.ico">
-	<style>
-		body {
-			background-color: black;
-			color: white;
-		}
+      div {
+      	text-align: center;
+      	margin-top: 45px;
+      	background-color: grey;
+      	width: fit-content;
+      	padding: 10px;
+      	border-color: grey;
+      	border-radius: 20px;
+      }
 
-		div {
-			text-align: center;
-			margin-top: 45px;
-			background-color: grey;
-			width: fit-content;
-			padding: 10px;
-			border-color: grey;
-			border-radius: 20px;
-		}
+      h1 {
+      	font-size: 60px;
+      }
 
-		h1 {
-			font-size: 60px;
-		}
+      h2 {
+      	font-size: 50px;
+      }
 
-		h2 {
-			font-size: 50px;
-		}
+      h3 {
+      	font-size: 40px;
+      }
 
-		h3 {
-			font-size: 40px;
-		}
+      h4 {
+      	font-size: 35px;
+      }
 
-		h4 {
-			font-size: 35px;
-		}
+      h5 {
+      	color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="config" onclick="debug()" style="background-color: black">
+      Debug
+    </button>
+    <center>
+      <div>
+        <h1>All about me</h1>
+        <h3>Timothy Wallis</h3>
+      </div>
+    </center>
+    <div style="float: right; position: relative;" id="r1">
+      <img src="house.jpg" width="250px" height="135px" />
+      <h4>I am from Columbus, Ohio.</h4>
+      <h4>I live with my Mom, Dad, and Sisters.</h4>
+    </div>
+    <div style="float: left; position: relative; top: 10cm;" id="l1">
+      <h2>Favorite Things...</h2>
+      <img src="Soccer-Ball.jpg" width="170px" height="170px" /><img
+        src="code.jpg"
+        width="170px"
+        height="170px"
+        style="position: relative; top: 30px;"
+      />
+      <h4 style="position: relative; top: 15px;">
+        I love to play soccer, and program
+      </h4>
+    </div>
+    <div style="float: right; position: relative; top: 10cm;" id="move">
+      <h2>Favorite candy</h2>
+      <img src="ree.jpg" height="170px" width="180px" />
+      <h4>My favorite candy is Reese's</h4>
+    </div>
+    <div style="float: left; position: relative; top: 20cm;" id="l2">
+      <h2>What I am excited for this class</h2>
+      <img src="3d.jpg" height="170px" width="195px" />
+      <h4>What I am excited for in this class is</h4>
+      <h4>learning how to use 2d and 3d modeling software.</h4>
+    </div>
+    <div style="float: right; position: relative; top: 20cm;" id="r2">
+      <h2>Plans after High School...</h2>
+      <img src="exp.jpg" width="300px" height="170px" />
+      <h4>I plan to go to a university,</h4>
+      <h4>and get a job in engineering/computer programming</h4>
+    </div>
+    <div style="float: left; position: relative; top: 20cm;" id="l3">
+      <h2>Goals for this Class/School year</h2>
+      <img src="a.jpg" width="170px" height="170px" />
+      <h4>My goals are to get all A's for every class</h4>
+    </div>
 
-		h5 {
-			color: grey;
-		}
-	</style>
-</head>
-<body>
-	<button id="config" onclick="debug()" style="background-color: black">Debug</button>
-	<center>
-		<div>
-			<h1>All about me</h1>
-			<h3>Timothy Wallis</h3>
-		</div>
-	</center>
-	<div style="float: right; position: relative;" id="r1">
-		<img src="house.jpg" width="250px" height="135px">
-		<h4>I am from Columbus, Ohio.</h4>
-		<h4>I live with my Mom, Dad, and Sisters.</h4>
-	</div>
-	<div style="float: left; position: relative; top: 10cm;" id="l1">
-		<h2>Favorite Things...</h2>
-		<img src="Soccer-Ball.jpg" width="170px" height="170px"><img src="code.jpg" width="170px" height="170px"
-			style="position: relative; top: 30px;">
-		<h4 style="position: relative; top: 15px;">I love to play soccer, and program</h4>
-	</div>
-	<div style="float: right; position: relative; top: 10cm;" id="move">
-		<h2> Favorite candy</h2>
-		<img src="ree.jpg" height="170px" width="180px">
-		<h4> My favorite candy is Reese's</h4>
-	</div>
-	<div style="float: left; position: relative; top: 20cm;" id="l2">
-		<h2>What I am excited for this class</h2>
-		<img src="3d.jpg" height="170px" width="195px">
-		<h4>What I am excited for in this class is </h4>
-		<h4>learning how to use 2d and 3d modeling software.</h4>
-	</div>
-	<div style="float: right; position: relative; top: 20cm;" id="r2">
-		<h2>Plans after High School...</h2>
-		<img src="exp.jpg" width="300px" height="170px">
-		<h4>I plan to go to a university,</h4>
-		<h4>and get a job in engineering/computer programming</h4>
-	</div>
-	<div style="float: left; position: relative; top: 20cm;" id="l3">
-		<h2>Goals for this Class/School year</h2>
-		<img src="a.jpg" width="170px" height="170px">
-		<h4>My goals are to get all A's for every class</h4>
-	</div>
-
-	<script>
-		var info = document.getElementById("move");
-		var r1 = document.getElementById("r1");
-		var l1 = document.getElementById("l1");
-		var r2 = document.getElementById("r2");
-		var l2 = document.getElementById("l2");
-		var l3 = document.getElementById("l3");
-		if (window.innerWidth >= 1300) {
-			info.style.top = "24.5cm";
-			info.style.left = "4cm";
-			r1.style.right = "10cm";
-			l1.style.left = "10cm";
-			l1.style.top = "12cm";
-			r2.style.right = "10cm";
-			l2.style.left = "10cm";
-			l2.style.top = "24.5cm";
-			r2.style.top = "40cm";
-			l3.style.left = "10cm";
-			l3.style.top = "40cm";
-		}
-		console.log(window.innerWidth);
-		document.addEventListener("scroll", e=> {
-			if (scrollY >= 40){
-			r1.style.backgroundColor = "red";
-			}
-			if (scrollY >= 600){
-				l1.style.backgroundColor = "orange";
-			}
-			if (scrollY >= 1160){
-				info.style.backgroundColor = "yellow";
-			}
-			if (scrollY >= 1720){
-				l2.style.backgroundColor = "green";
-			}
-			if (scrollY >= 2280){
-				r2.style.backgroundColor = "blue";
-			}
-			if (scrollY >= 2840){
-				l3.style.backgroundColor = "purple";
-			}
-		});
-		function debug() {
-			info.style.top = "16.5cm";
-			info.style.left = "0cm";
-			info.style.right = "35cm";
-			l2.style.top = "27.5cm";
-			l2.style.left = "14cm";
-			r2.style.top = "30cm";
-			l3.style.top = "30cm";
-		}
-	</script>
-</body>
+    <script>
+      var info = document.getElementById("move");
+      var r1 = document.getElementById("r1");
+      var l1 = document.getElementById("l1");
+      var r2 = document.getElementById("r2");
+      var l2 = document.getElementById("l2");
+      var l3 = document.getElementById("l3");
+      if (window.innerWidth >= 1300) {
+        info.style.top = "24.5cm";
+        info.style.left = "4cm";
+        r1.style.right = "10cm";
+        l1.style.left = "10cm";
+        l1.style.top = "12cm";
+        r2.style.right = "10cm";
+        l2.style.left = "10cm";
+        l2.style.top = "24.5cm";
+        r2.style.top = "40cm";
+        l3.style.left = "10cm";
+        l3.style.top = "40cm";
+      }
+      console.log(window.innerWidth);
+      document.addEventListener("scroll", (e) => {
+        if (scrollY >= 40) {
+          r1.style.backgroundColor = "red";
+        }
+        if (scrollY >= 600) {
+          l1.style.backgroundColor = "orange";
+        }
+        if (scrollY >= 1160) {
+          info.style.backgroundColor = "yellow";
+        }
+        if (scrollY >= 1720) {
+          l2.style.backgroundColor = "green";
+        }
+        if (scrollY >= 2280) {
+          r2.style.backgroundColor = "blue";
+        }
+        if (scrollY >= 2840) {
+          l3.style.backgroundColor = "purple";
+        }
+      });
+      function debug() {
+        info.style.top = "16.5cm";
+        info.style.left = "0cm";
+        info.style.right = "35cm";
+        l2.style.top = "27.5cm";
+        l2.style.left = "14cm";
+        r2.style.top = "30cm";
+        l3.style.top = "30cm";
+      }
+    </script>
+  </body>
 </html>
